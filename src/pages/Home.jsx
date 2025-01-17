@@ -1,4 +1,3 @@
-import headshot from "../assets/images/headshot.png";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";

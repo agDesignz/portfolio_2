@@ -1,8 +1,9 @@
 @layer components {
   .page-section {
-    @apply container xl:max-w-[1200px] flex items-center justify-center py-24;
+    @apply container xl:max-w-[1200px] flex items-center justify-center py-48;
     &--border {
-      @apply border-b border-blue_(ncs)-200;
+      /* @apply border-b border-blue_(ncs)-200; */
+      border: none;
     }
     &--full {
       @apply min-h-screen;

@@ -11,7 +11,7 @@ const TechSkills = () => {
           {TECH_SKILLS.map((skill, idx) => (
             <div
               key={idx}
-              className="shadow-md shadow-navy_blue-100 rounded-md border border-cocoa-300 p-4 hover:scale-105 duration-500 flex flex-col items-center gap-4"
+              className="shadow-md shadow-navy_blue-100 rounded-md border border-cocoa-300 p-4 hover:scale-105 hover:bg-cocoa-300/15 duration-500 flex flex-col items-center gap-4"
             >
               <skill.icon className={`text-4xl sm:text-7xl ${skill.fill}`} />
               <p className="uppercase text-xl">{skill.name}</p>
