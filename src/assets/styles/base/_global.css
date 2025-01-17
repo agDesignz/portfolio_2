@@ -1,0 +1,14 @@
+:root {
+  --polynesian-blue: theme(colors.polynesian_blue.500);
+  --navy-blue: theme(colors.navy_blue.500);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}

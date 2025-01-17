@@ -1,0 +1,8 @@
+@layer components {
+  .link-outline {
+    @apply py-1 px-4 border rounded-md;
+    &--light {
+      @apply border-saffron-800 hover:bg-saffron-800 hover:text-blue_(ncs)-200 duration-200;
+    }
+  }
+}

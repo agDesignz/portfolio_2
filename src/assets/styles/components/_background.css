@@ -1,0 +1,35 @@
+.dark-gradient {
+  background-color: rgb(10, 10, 10);
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    rgba(28, 90, 111, 0.6),
+    rgba(23, 58, 75, 0.3)
+  );
+}
+
+.solid-gradient {
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    #0e2d37,
+    #0b1d26
+  );
+}
+
+/*
+sky_blue-100 -- rgb(14, 45, 55)
+blue_(ncs)-100 -- rgb(11, 29, 38)
+
+*/
+
+/* absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(8,47,73,.5),rgba(8,47,73,.3))] */
+
+.exp-gradient {
+  background-image: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(14, 45, 55, 0.3),
+      rgba(11, 29, 38, 0.9)
+    ),
+    url("https://alexgeer.netlify.app/images/bg-lg.jpg");
+  background-position: right center;
+  background-size: cover;
+}
