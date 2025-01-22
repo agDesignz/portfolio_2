@@ -6,6 +6,7 @@ export default {
       center: true,
     },
     screens: {
+      xs: "320px",
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 

@@ -5,11 +5,14 @@
       /* @apply border-b border-blue_(ncs)-200; */
       border: none;
     }
-    &--full {
-      @apply min-h-screen;
-    }
     &__title {
       @apply text-4xl font-bold border-b-2 inline border-cocoa-300;
+    }
+    &--full-h {
+      @apply min-h-screen;
+    }
+    &--narrow {
+      @apply max-w-[600px] xl:max-w-[600px];
     }
   }
 }
