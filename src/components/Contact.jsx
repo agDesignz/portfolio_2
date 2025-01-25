@@ -19,7 +19,7 @@ const Contact = () => {
               directly, or connect on LinkedIn.
             </p>
 
-            <div className="flex flex-col xs:flex-row gap-8 md:gap-16">
+            <div className="flex flex-col min-[320px]:flex-row gap-8 md:gap-16">
               <div className="flex items-center">
                 <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <MdEmail className="text-2xl" />
