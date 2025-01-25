@@ -1,7 +1,17 @@
 const PROJECTS = [
   {
+    title: "Jane Prince",
+    description: "Website for a city council member",
+    stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
+    code: "https://github.com/agDesignz/jane_prince_wp",
+    live: "https://janeprincew7.com/",
+    image: "project-jane.png",
+    alt: "screenshot of Jane Prince campaign website.",
+  },
+  {
     title: "Pinnacle Solar",
-    description: "A website for a solar energy company in Massachusetts",
+    description:
+      "Business website for a solar energy company in Massachusetts (*No longer live - click below to see the HTML version on Github Pages.)",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/pinnacle-solar_wp",
     live: "https://pinnaclesolarenergy.com/",
@@ -10,7 +20,8 @@ const PROJECTS = [
   },
   {
     title: "VoteDavidGS",
-    description: "A campaign website for a city-council candidate",
+    description:
+      "Campaign website for a city-council candidate (*No longer live)",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/votedavidgs-wp",
     live: "https://votedavidgs.com/",
@@ -37,21 +48,12 @@ const PROJECTS = [
   },
   {
     title: "DKG Landscaping",
-    description: "Fictitious company website, for practicing Scss and CSS",
+    description: "Fictitious business website, for practicing Scss and CSS",
     stack: ["Scss", "HTML", "Javascript"],
     code: "https://github.com/agDesignz/dkgLandscaping_Scss",
     live: "https://agdesignz.github.io/dkgLandscaping_Scss/",
     image: "project-dkg.png",
     alt: "screenshot of DKG landscaping.",
-  },
-  {
-    title: "Jane Prince",
-    description: "Website for a city council member",
-    stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
-    code: "https://github.com/agDesignz/jane_prince_wp",
-    live: "https://janeprincew7.com/",
-    image: "project-jane.png",
-    alt: "screenshot of Jane Prince campaign website.",
   },
   {
     title: "Pets R Us",
