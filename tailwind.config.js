@@ -23,6 +23,11 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        rufina: ["Rufina", "serif"],
+        sintony: ["Sintony", "sans-serif"],
+      },
       colors: {
         syracuse_red: {
           DEFAULT: "#cc4400",

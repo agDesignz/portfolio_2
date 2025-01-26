@@ -6,7 +6,7 @@
       border: none;
     }
     &__title {
-      @apply text-4xl text-saffron-500 font-bold border-b-2 inline border-cocoa-300;
+      @apply text-4xl font-poppins font-bold text-saffron-500 border-b-2 inline border-cocoa-300;
     }
     &--full-h {
       @apply min-h-screen;

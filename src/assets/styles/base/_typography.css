@@ -1,0 +1,9 @@
+@layer base {
+  p {
+    @apply font-poppins;
+  }
+
+  h2 {
+    @apply font-sintony;
+  }
+}
