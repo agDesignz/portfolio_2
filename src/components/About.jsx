@@ -1,4 +1,4 @@
-import portrait from "../assets/images/portrait.png";
+import portrait from "/images/portrait.png";
 import React, { useState, useEffect } from "react";
 
 const About = () => {

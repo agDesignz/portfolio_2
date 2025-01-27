@@ -12,11 +12,11 @@ const Projects = () => {
           {PROJECTS.map((pro, idx) => (
             <div
               key={idx}
-              className="grid sm:grid-cols-[1fr_1fr] sm:max-h-56 lg:grid-cols-[2fr_3fr] gap-8"
+              className="grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-8"
             >
               <figure className="max-w-80 rounded-md overflow-hidden shadow-sm shadow-cocoa-300 relative">
                 <img
-                  src={`./src/assets/images/${pro.image}`}
+                  src={`/images/${pro.image}`}
                   alt={`Image of ${pro.title}`}
                   className="object-cover h-full"
                 />
