@@ -24,9 +24,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        rufina: ["Rufina", "serif"],
-        sintony: ["Sintony", "sans-serif"],
+        "open-sans": ["Open_Sans", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
+        fredericka: ["Fredericka_The_Great", "serif"],
       },
       colors: {
         syracuse_red: {

@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="page-section">
       <div className="flex flex-col gap-8 w-full">
         <div>
-          <h3 className="page-section__title">Contact</h3>
+          <h2 className="page-section__title">Contact</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 items-start gap-8 md:gap-16 font-[sans-serif]">
@@ -24,14 +24,14 @@ const Contact = () => {
                 <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <MdEmail className="text-2xl" />
                 </div>
-                <a href="/" className="text-sm ml-4">
+                <a href="/" className="text-sm ml-4 hover:opacity-50">
                   <small className="block">Mail</small>
                   <strong>info@example.com</strong>
                 </a>
               </div>
               <div className="flex items-center">
                 <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="/" className="">
+                  <a href="/" className="hover:opacity-50">
                     <FaLinkedinIn className="text-2xl" />
                   </a>
                 </div>

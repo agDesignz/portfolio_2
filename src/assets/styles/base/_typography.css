@@ -1,9 +1,14 @@
 @layer base {
+  html,
+  body {
+    @apply font-open-sans;
+  }
+
   p {
-    @apply font-poppins;
+    @apply font-open-sans font-extralight;
   }
 
   h2 {
-    @apply font-sintony;
+    @apply font-fredericka;
   }
 }

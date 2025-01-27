@@ -1,12 +1,12 @@
 @layer components {
   .page-section {
-    @apply container xl:max-w-[1200px] flex items-center justify-center py-48;
+    @apply container xl:max-w-[1200px] flex items-center justify-center py-4 md:py-12;
     &--border {
       /* @apply border-b border-blue_(ncs)-200; */
       border: none;
     }
     &__title {
-      @apply text-4xl font-poppins font-bold text-saffron-500 border-b-2 inline border-cocoa-300;
+      @apply text-4xl md:text-5xl text-saffron-500 border-b-2 inline border-cocoa-300;
     }
     &--full-h {
       @apply min-h-screen;

@@ -15,14 +15,14 @@ const About = () => {
     <section className="page-section page-section--border">
       <div className="flex flex-col gap-8">
         <div>
-          <h3 className="page-section__title">About</h3>
+          <h2 className="page-section__title">About</h2>
         </div>
-        <div className="grid sm:grid-cols-2 gap-8">
-          <h2 className="text-xl sm:text-2xl md:text-3xl sm:col-span-2">
+        <div className="grid lg:grid-cols-2 gap-8">
+          <h3 className="text-xl sm:text-2xl md:text-3xl">
             Blending Technical Expertise with Creativity and a Diverse Skill Set
-          </h2>
+          </h3>
 
-          <div className="flex flex-col gap-4 sm:row-start-2 sm:text-lg md:text-xl leading-relaxed">
+          <div className="flex flex-col gap-4 lg:row-start-2 sm:text-lg lg:text-xl leading-relaxed">
             <p>
               My journey into coding began as a creative spark, and it quickly
               grew into a passion. Designing, building, and styling apps allows
@@ -47,9 +47,10 @@ const About = () => {
               development.
             </p>
           </div>
-          <figure className="sm:row-start-2 rounded-md overflow-hidden">
+          <figure className="row-start-2 rounded-full overflow-hidden h-48 w-48 min-[320px]:h-80 min-[320px]:w-80 justify-self-center">
             {imgLoaded ? (
               <img
+                className="h-full w-full object-cover"
                 src={portrait}
                 alt="Portrait of Alex Geer in the mountains"
               />

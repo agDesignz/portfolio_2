@@ -65,7 +65,11 @@ const ContactForm = () => {
   }
 
   return (
-    <form className="flex flex-col gap-4" ref={form} onSubmit={handleSubmit}>
+    <form
+      className="flex flex-col gap-4 text-navy_blue-600 text-lg"
+      ref={form}
+      onSubmit={handleSubmit}
+    >
       <input
         autoComplete="off"
         type="text"
@@ -74,7 +78,7 @@ const ContactForm = () => {
         name="name"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md py-3 px-4 bg-mindaro-900 text-blue_(ncs)-100 placeholder:text-polynesian_blue-700 text-sm outline-polynesian_blue-500"
+        className="w-full rounded-md py-3 px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 outline-polynesian_blue-500"
       />
       <input
         autoComplete="off"
@@ -84,7 +88,7 @@ const ContactForm = () => {
         name="email"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md py-3 px-4 bg-mindaro-900 text-blue_(ncs)-100 placeholder:text-polynesian_blue-700 text-sm outline-polynesian_blue-500"
+        className="w-full rounded-md py-3 px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 outline-polynesian_blue-500"
       />
       <textarea
         autoComplete="off"
@@ -94,11 +98,11 @@ const ContactForm = () => {
         name="message"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md px-4 bg-mindaro-900 text-blue_(ncs)-100 placeholder:text-polynesian_blue-700 text-sm pt-3 outline-polynesian_blue-500"
+        className="w-full rounded-md px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 pt-3 outline-polynesian_blue-500"
       ></textarea>
       <button
         type="submit"
-        className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md text-sm px-4 py-3 w-full"
+        className="bg-gradient-to-tr from-carrot-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"
       >
         Send
       </button>

@@ -6,7 +6,7 @@ const Projects = () => {
     <section className="page-section page-section--border">
       <div className="flex flex-col gap-8 w-full">
         <div>
-          <h3 className="page-section__title">Projects</h3>
+          <h2 className="page-section__title">Projects</h2>
         </div>
         <div className="flex flex-col gap-8">
           {PROJECTS.map((pro, idx) => (
@@ -23,13 +23,13 @@ const Projects = () => {
                 {/* <div className="absolute top-0 left-0 right-0 bottom-0 z-20 project-gradient opacity-0 hover:opacity-100 duration-200"></div> */}
               </figure>
               <div className="flex flex-col gap-4">
-                <h6>{pro.title}</h6>
+                <h3 className="font-oswald text-xl">{pro.title}</h3>
                 <p>{pro.description}</p>
                 <div className="flex flex-wrap gap-4">
                   {pro.stack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="rounded-sm bg-cocoa-300 px-2 py-1 text-sm text-sky_blue-900"
+                      className="rounded-sm bg-cocoa-300 px-2 py-1 font-open-sans text-sm text-sky_blue-900"
                     >
                       {tech}
                     </span>
