@@ -25,13 +25,13 @@ const Contact = () => {
                 <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <MdEmail className="text-2xl" />
                 </div>
-                <Link
+                <a
                   href="mailto:alexgeorgegeer@gmail.com"
                   className="text-sm ml-4 hover:opacity-50"
                 >
                   <small className="block">Mail</small>
                   <strong>alexgeorgegeer@gmail.com</strong>
-                </Link>
+                </a>
               </div>
               <div className="flex items-center">
                 <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
