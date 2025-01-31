@@ -14,7 +14,7 @@ const PROJECTS = [
       "Business website for a solar energy company in Massachusetts (*No longer live - click below to see the HTML version on Github Pages.)",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/pinnacle-solar_wp",
-    live: "https://pinnaclesolarenergy.com/",
+    live: "https://agdesignz.github.io/pinnacle-solar/",
     image: "project-pinn.png",
     alt: "screenshot of Pinnacle Solar website.",
   },
