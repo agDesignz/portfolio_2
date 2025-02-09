@@ -11,10 +11,10 @@ const PROJECTS = [
   {
     title: "Pinnacle Solar",
     description:
-      "Business website for a solar energy company in Massachusetts (*No longer live - click below to see the HTML version on Github Pages.)",
+      "Business website for a solar energy company in Massachusetts (*No longer live - click below to see the archived site.)",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/pinnacle-solar_wp",
-    live: "https://agdesignz.github.io/pinnacle-solar/",
+    live: "https://solar.alexgeer.dev/",
     image: "project-pinn.png",
     alt: "screenshot of Pinnacle Solar website.",
   },
