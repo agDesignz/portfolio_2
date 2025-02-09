@@ -21,6 +21,10 @@ const ContactForm = () => {
 
   const form = useRef();
 
+  const handleAltchaVerify = (payload) => {
+    setCaptchaToken(payload);
+  };
+
   function handleValidation(e) {
     const field = e.target.name;
     // Check for a good email
@@ -73,7 +77,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-4 text-navy_blue-600 text-lg"
+      className="flex flex-col gap-4 text-navy_blue-600 text-lg items-center"
       ref={form}
       onSubmit={handleSubmit}
     >
@@ -107,7 +111,7 @@ const ContactForm = () => {
         onBlur={handleValidation}
         className="w-full rounded-md px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 pt-3 outline-polynesian_blue-500"
       ></textarea>
-      <AltchaComponent onVerify={setCaptchaToken} />
+      <AltchaComponent onVerify={handleAltchaVerify} />
       <button
         type="submit"
         className="bg-gradient-to-tr from-carrot-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"

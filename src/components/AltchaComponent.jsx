@@ -1,42 +1,33 @@
 import "altcha";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const AltchaComponent = ({ onVerify }) => {
-  const widgetRef = useRef(null);
-
   useEffect(() => {
-    const widgetElement = widgetRef.current;
+    const widget = document.querySelector("#altcha");
+    console.log("Verify Triggered");
+    if (widget) {
+      const handleVerified = (ev) => {
+        // setPayload(ev.detail.payload);
+        onVerify(ev.detail.payload); // Pass payload to parent component
+      };
+      widget.addEventListener("verified", handleVerified);
 
-    const handleVerify = (event) => {
-      console.log("Altcha verified:", event.detail);
-      onVerify(event.detail.token); // Assuming the token is in event.detail.token
-    };
-
-    if (widgetElement) {
-      widgetElement.addEventListener("verify", handleVerify);
+      return () => widget.removeEventListener("verified", handleVerified);
     }
-
-    return () => {
-      if (widgetElement) {
-        widgetElement.removeEventListener("verify", handleVerify);
-      }
-    };
   }, [onVerify]);
 
   useEffect(() => {
-    console.log(widgetRef.current);
+    console.log(document.querySelector("#altcha"));
   }, []);
 
   return (
-    <div>
-      <altcha-widget
-        ref={widgetRef}
-        challengeurl={`https://us.altcha.org/api/v1/challenge?apiKey=${
-          import.meta.env.VITE_ALTCHA_SITEKEY
-        }`}
-        className="w-full rounded-md py-3 px-4 flex justify-center mt-4"
-      ></altcha-widget>
-    </div>
+    <altcha-widget
+      style={{ width: "100%" }}
+      id="altcha"
+      challengeurl={`https://us.altcha.org/api/v1/challenge?apiKey=${
+        import.meta.env.VITE_ALTCHA_SITEKEY
+      }`}
+    ></altcha-widget>
   );
 };
 
