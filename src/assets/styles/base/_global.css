@@ -1,6 +1,7 @@
 :root {
-  --polynesian-blue: theme(colors.polynesian_blue.500);
-  --navy-blue: theme(colors.navy_blue.500);
+  /* --polynesian-blue: theme(colors.polynesian_blue.500);
+  --navy-blue: theme(colors.navy_blue.500); */
+  --green: theme(colors.mindaro.200);
 }
 
 *,

@@ -1,5 +1,5 @@
 import "altcha";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 const AltchaComponent = ({ onVerify }) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const AltchaComponent = ({ onVerify }) => {
 
   return (
     <altcha-widget
-      style={{ width: "100%" }}
+      style={{ width: "100%", color: "#ffffff" }}
       id="altcha"
       challengeurl={`https://us.altcha.org/api/v1/challenge?apiKey=${
         import.meta.env.VITE_ALTCHA_SITEKEY

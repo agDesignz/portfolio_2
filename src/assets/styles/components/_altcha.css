@@ -1,0 +1,13 @@
+@layer components {
+  .altcha-widget {
+    @apply w-full;
+  }
+
+  .altcha {
+    @apply w-full max-w-full;
+  }
+
+  .altcha-main {
+    @apply w-full text-saffron-800;
+  }
+}
