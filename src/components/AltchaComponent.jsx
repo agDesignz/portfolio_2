@@ -1,34 +1,51 @@
 import "altcha";
-import { useEffect } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  forwardRef,
+  useImperativeHandle,
+} from "react";
 
-const AltchaComponent = ({ onVerify }) => {
+const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
+  const widgetRef = useRef(null);
+  const [value, setValue] = useState(null);
+
+  useImperativeHandle(
+    ref,
+    () => ({
+      get value() {
+        return value;
+      },
+    }),
+    [value]
+  );
+
   useEffect(() => {
-    const widget = document.querySelector("#altcha");
-    console.log("Verify Triggered");
-    if (widget) {
-      const handleVerified = (ev) => {
-        // setPayload(ev.detail.payload);
-        onVerify(ev.detail.payload); // Pass payload to parent component
-      };
-      widget.addEventListener("verified", handleVerified);
+    const handleStateChange = (ev) => {
+      if ("detail" in ev) {
+        setValue(ev.detail.payload || null);
+        onStateChange?.(ev);
+      }
+    };
 
-      return () => widget.removeEventListener("verified", handleVerified);
+    const { current } = widgetRef;
+    if (current) {
+      current.addEventListener("statechange", handleStateChange);
+      return () =>
+        current.removeEventListener("statechange", handleStateChange);
     }
-  }, [onVerify]);
-
-  useEffect(() => {
-    console.log(document.querySelector("#altcha"));
-  }, []);
+  }, [onStateChange]);
 
   return (
     <altcha-widget
       style={{ width: "100%", color: "#ffffff" }}
-      id="altcha"
+      ref={widgetRef}
       challengeurl={`https://us.altcha.org/api/v1/challenge?apiKey=${
         import.meta.env.VITE_ALTCHA_SITEKEY
       }`}
     ></altcha-widget>
   );
-};
+});
 
 export default AltchaComponent;
