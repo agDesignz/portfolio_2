@@ -22,8 +22,8 @@ const Contact = () => {
 
             <div className="flex flex-col min-[320px]:flex-row gap-8 md:gap-16">
               <div className="flex items-center">
-                <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <MdEmail className="text-2xl" />
+                <div className="bg-gradient-to-tr from-polynesian_blue-800 to-polynesian_blue-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <MdEmail className="text-2xl fill-cocoa-100" />
                 </div>
                 <a
                   href="mailto:alexgeorgegeer@gmail.com"
@@ -34,15 +34,15 @@ const Contact = () => {
                 </a>
               </div>
               <div className="flex items-center">
-                <div className="bg-gradient-to-tr from-polynesian_blue-400 to-polynesian_blue-600 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <Link
-                    to="https://www.linkedin.com/in/alexander-geer/"
-                    target="_blank"
-                    className="hover:opacity-50"
-                  >
-                    <FaLinkedinIn className="text-2xl" />
-                  </Link>
-                </div>
+                <Link
+                  to="https://www.linkedin.com/in/alexander-geer/"
+                  target="_blank"
+                  className="hover:opacity-50"
+                >
+                  <div className="bg-gradient-to-tr from-polynesian_blue-800 to-polynesian_blue-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <FaLinkedinIn className="text-2xl fill-cocoa-100" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
