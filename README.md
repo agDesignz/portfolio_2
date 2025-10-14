@@ -4,6 +4,8 @@
 
 ### This is the second portfolio site I have built. First launched in January, 2025.
 
-### Built with React, Tailwind and Vite
+### Built with React, Tailwind and Vite.
 
-### [See the live deployment](https://alexgeer.netlify.app/)
+### Integrated [Altcha](https://altcha.org/) for Bot Protection.
+
+### [See the live deployment](https://alexgeer.dev/)
