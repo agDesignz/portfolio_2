@@ -45,24 +45,23 @@ const ContactForm = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.EMAILJS_SERVICE_ID,
-    //     process.env.EMAILJS_TEMPLATE_ID,
-    //     form.current,
-    //     {
-    //       publicKey: process.env.EMAILJS_PUBLIC_KEY,
-    //     }
-    //   )
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
-    console.log("Form State:", formState);
+    emailjs
+      .sendForm(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
 
     setUserMessage("email sent");
     setFormState({ name: "", email: "", message: "" });
