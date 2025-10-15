@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "altcha": "^1.1.1",
+    "altcha": "^2.2.4",
     "dotenv": "^16.4.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
