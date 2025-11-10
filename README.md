@@ -6,6 +6,4 @@
 
 ### Built with React, Tailwind and Vite.
 
-### Integrated [Altcha](https://altcha.org/) for Bot Protection.
-
 ### [See the live deployment](https://alexgeer.dev/)
