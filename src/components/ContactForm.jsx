@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import "dotenv";
 
 const ContactForm = () => {
+  const form = useRef();
   // Data from the form:
   const [formState, setFormState] = useState({
     name: "",
@@ -70,6 +71,7 @@ const ContactForm = () => {
       className="flex flex-col gap-4 text-navy_blue-600 text-lg items-center"
       ref={form}
       onSubmit={handleSubmit}
+      ref={form}
     >
       <input
         autoComplete="off"
