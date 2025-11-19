@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import validateEmail from "../utils/validateEmail";
 import emailjs from "@emailjs/browser";
 import "dotenv";
+
 import AltchaComponent from "./AltchaComponent"; // Import captcha component
 
 const ContactForm = () => {
