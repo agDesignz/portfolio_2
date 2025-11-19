@@ -3,6 +3,8 @@ import validateEmail from "../utils/validateEmail";
 import emailjs from "@emailjs/browser";
 import "dotenv";
 
+import AltchaComponent from "./AltchaComponent"; // Import captcha component
+
 const ContactForm = () => {
   const form = useRef();
   // Data from the form:
@@ -100,6 +102,7 @@ const ContactForm = () => {
         onBlur={handleValidation}
         className="w-full rounded-md px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 pt-3 outline-polynesian_blue-500"
       ></textarea>
+      <AltchaComponent ref={altchaRef} />
       <button
         type="submit"
         className="bg-gradient-to-tr from-carrot-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"
