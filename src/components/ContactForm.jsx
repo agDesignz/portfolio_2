@@ -13,8 +13,6 @@ const ContactForm = () => {
   });
   const [userMessage, setUserMessage] = useState("");
 
-  const form = useRef();
-
   // onBlur on each input element
   // calls handleInputCHange to validate
   function handleInputChange(e) {
@@ -71,7 +69,6 @@ const ContactForm = () => {
       className="flex flex-col gap-4 text-navy_blue-600 text-lg items-center"
       ref={form}
       onSubmit={handleSubmit}
-      ref={form}
     >
       <input
         autoComplete="off"
