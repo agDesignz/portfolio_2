@@ -5,6 +5,7 @@ import "dotenv";
 import AltchaComponent from "./AltchaComponent"; // Import captcha component
 
 const ContactForm = () => {
+  const form = useRef();
   // Data from the form:
   const [formState, setFormState] = useState({
     name: "",
@@ -71,6 +72,7 @@ const ContactForm = () => {
     <form
       className="flex flex-col gap-4 text-navy_blue-600 text-lg items-center"
       onSubmit={handleSubmit}
+      ref={form}
     >
       <input
         autoComplete="off"

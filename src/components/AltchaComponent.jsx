@@ -41,9 +41,7 @@ const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
     <altcha-widget
       style={{ width: "100%", color: "#ffffff" }}
       ref={widgetRef}
-      challengeurl={`https://us.altcha.org/api/v1/challenge?apiKey=${
-        import.meta.env.VITE_ALTCHA_SITEKEY
-      }`}
+      challengeurl="http://localhost:4000/api/altcha/challenge"
     ></altcha-widget>
   );
 });
