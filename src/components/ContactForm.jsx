@@ -44,30 +44,47 @@ const ContactForm = () => {
     // Alert them if nothing is filled properly
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = async function (e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: process.env.EMAILJS_PUBLIC_KEY,
-        }
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    const altchaToken = altchaRef.current?.value;
+
+    if (!altchaToken) {
+      setUserMessage("Please complete the captcha");
+      return;
+    }
+
+    const valid = await fetch(process.env.ALTCHA_API_VERIFY, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        token: altchaToken,
+        extra: {},
+      }),
+    });
+
+    console.log("valid:", valid);
+    // emailjs
+    //   .sendForm(
+    //     process.env.EMAILJS_SERVICE_ID,
+    //     process.env.EMAILJS_TEMPLATE_ID,
+    //     form.current,
+    //     {
+    //       publicKey: process.env.EMAILJS_PUBLIC_KEY,
+    //     }
+    //   )
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
 
     setUserMessage("email sent");
     setFormState({ name: "", email: "", message: "" });
-  }
+  };
 
   return (
     <form

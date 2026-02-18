@@ -10,6 +10,7 @@ import {
 const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
   const widgetRef = useRef(null);
   const [value, setValue] = useState(null);
+  const challengeapi = process.env.ALTCHA_API_CHALLENGE;
 
   useImperativeHandle(
     ref,
@@ -41,7 +42,7 @@ const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
     <altcha-widget
       style={{ width: "100%", color: "#ffffff" }}
       ref={widgetRef}
-      challengeurl="http://localhost:4000/api/altcha/challenge"
+      challengeurl={challengeapi}
     ></altcha-widget>
   );
 });

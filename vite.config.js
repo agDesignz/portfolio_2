@@ -11,6 +11,10 @@ export default defineConfig(({ mode }) => {
         env.EMAILJS_TEMPLATE_ID
       ),
       "process.env.EMAILJS_PUBLIC_KEY": JSON.stringify(env.EMAILJS_PUBLIC_KEY),
+      "process.env.ALTCHA_API_CHALLENGE": JSON.stringify(
+        env.ALTCHA_API_CHALLENGE
+      ),
+      "process.env.ALTCHA_API_VERIFY": JSON.stringify(env.ALTCHA_API_VERIFY),
     },
     plugins: [react()],
     server: {
