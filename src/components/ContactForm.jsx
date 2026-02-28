@@ -58,6 +58,7 @@ const ContactForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        site: "portfolio",
         token: altchaToken,
         extra: {},
       }),
