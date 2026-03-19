@@ -1,9 +1,10 @@
 import { useState, useRef } from "react";
 import validateEmail from "../utils/validateEmail";
-import emailjs from "@emailjs/browser";
-import "dotenv";
+// import emailjs from "@emailjs/browser";
+// import "dotenv";
 
 import AltchaComponent from "./AltchaComponent"; // Import captcha component
+import sendEmail from "../utils/sendEmail";
 
 const ContactForm = () => {
   const form = useRef();
@@ -64,27 +65,18 @@ const ContactForm = () => {
       }),
     });
 
-    console.log("valid:", valid);
-    // emailjs
-    //   .sendForm(
-    //     process.env.EMAILJS_SERVICE_ID,
-    //     process.env.EMAILJS_TEMPLATE_ID,
-    //     form.current,
-    //     {
-    //       publicKey: process.env.EMAILJS_PUBLIC_KEY,
-    //     }
-    //   )
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
+    console.log(valid);
 
-    setUserMessage("email sent");
-    setFormState({ name: "", email: "", message: "" });
+    if (valid.ok) {
+      const emailStatus = await sendEmail(form.current);
+      console.log("emailStatus:", emailStatus.status);
+
+      emailStatus.status === 200 && setUserMessage("email sent");
+      setFormState({ name: "", email: "", message: "" });
+    } else {
+      setUserMessage("Captcha Invalid. Message Not Sent.");
+      return;
+    }
   };
 
   return (
