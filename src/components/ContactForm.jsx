@@ -1,10 +1,9 @@
 import { useState, useRef } from "react";
 import validateEmail from "../utils/validateEmail";
-// import emailjs from "@emailjs/browser";
-// import "dotenv";
 
 import AltchaComponent from "./AltchaComponent"; // Import captcha component
 import sendEmail from "../utils/sendEmail";
+import altchaVerify from "../utils/altchaVerify";
 
 const ContactForm = () => {
   const form = useRef();
@@ -41,20 +40,15 @@ const ContactForm = () => {
         setUserMessage("");
       }
     }
-    // Check that name and message have some input
-    // Alert them if nothing is filled properly
   }
 
   const handleSubmit = async function (e) {
     e.preventDefault();
 
-    const formFilled = Object.values(formState).every(
-      (value) => value != null && value !== ""
-    );
-
-    if (!formFilled) {
+    if (
+      !Object.values(formState).every((value) => value != null && value !== "")
+    ) {
       setUserMessage("Please complete the form");
-      console.log("formFilled:", formFilled);
       return;
     }
 
@@ -65,28 +59,18 @@ const ContactForm = () => {
       return;
     }
 
-    const altchaVerified = await fetch(process.env.ALTCHA_API_VERIFY, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        site: "portfolio",
-        token: altchaToken,
-        extra: {},
-      }),
-    });
+    const altchaVerified = await altchaVerify(altchaToken);
 
-    console.log(altchaVerified);
+    if (altchaVerified.ok) {
+      const emailStatus = await sendEmail(form.current);
 
-    // if (altchaVerified.ok) {
-    //   const emailStatus = await sendEmail(form.current);
-    //   console.log("emailStatus:", emailStatus.status);
-
-    //   emailStatus.status === 200 && setUserMessage("email sent");
-    //   setFormState({ name: "", email: "", message: "" });
-    // } else {
-    //   setUserMessage("Captcha Invalid. Message Not Sent.");
-    //   return;
-    // }
+      emailStatus.status === 200 && setUserMessage("email sent");
+      setFormState({ name: "", email: "", message: "" });
+      return;
+    } else {
+      setUserMessage("Captcha Invalid. Message Not Sent.");
+      return;
+    }
   };
 
   return (
