@@ -48,6 +48,16 @@ const ContactForm = () => {
   const handleSubmit = async function (e) {
     e.preventDefault();
 
+    const formFilled = Object.values(formState).every(
+      (value) => value != null && value !== ""
+    );
+
+    if (!formFilled) {
+      setUserMessage("Please complete the form");
+      console.log("formFilled:", formFilled);
+      return;
+    }
+
     const altchaToken = altchaRef.current?.value;
 
     if (!altchaToken) {
@@ -55,7 +65,7 @@ const ContactForm = () => {
       return;
     }
 
-    const valid = await fetch(process.env.ALTCHA_API_VERIFY, {
+    const altchaVerified = await fetch(process.env.ALTCHA_API_VERIFY, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -65,18 +75,18 @@ const ContactForm = () => {
       }),
     });
 
-    console.log(valid);
+    console.log(altchaVerified);
 
-    if (valid.ok) {
-      const emailStatus = await sendEmail(form.current);
-      console.log("emailStatus:", emailStatus.status);
+    // if (altchaVerified.ok) {
+    //   const emailStatus = await sendEmail(form.current);
+    //   console.log("emailStatus:", emailStatus.status);
 
-      emailStatus.status === 200 && setUserMessage("email sent");
-      setFormState({ name: "", email: "", message: "" });
-    } else {
-      setUserMessage("Captcha Invalid. Message Not Sent.");
-      return;
-    }
+    //   emailStatus.status === 200 && setUserMessage("email sent");
+    //   setFormState({ name: "", email: "", message: "" });
+    // } else {
+    //   setUserMessage("Captcha Invalid. Message Not Sent.");
+    //   return;
+    // }
   };
 
   return (
