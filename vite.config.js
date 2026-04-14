@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [react()],
     server: {
+      hmr: true,
       port: 3001,
       host: true, // accessible through other devices
       open: true, // Opens automatically

@@ -38,16 +38,24 @@ const Projects = () => {
                 <div className="flex gap-4 mt-2">
                   <Link
                     to={pro.code}
-                    className="link-outline link-outline--light"
+                    target="_blank"
+                    className="link-outline link-outline--light link-outline--live"
                   >
                     Code
                   </Link>
-                  <Link
-                    to={pro.live}
-                    className="link-outline link-outline--light"
-                  >
-                    Live
-                  </Link>
+                  {pro.live ? (
+                    <Link
+                      to={pro.live && pro.live}
+                      target="_blank"
+                      className="link-outline link-outline--light link-outline--live"
+                    >
+                      Live
+                    </Link>
+                  ) : (
+                    <div className="link-outline link-outline--dead">
+                      No live version available
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
