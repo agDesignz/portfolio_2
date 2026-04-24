@@ -42,7 +42,7 @@ const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
     <altcha-widget
       style={{ width: "100%", color: "#ffffff" }}
       ref={widgetRef}
-      challengeurl={`${challengeapi}?site=portfolio`}
+      challengeurl={`${challengeapi}?site=${provess.env.ALTCHA_KEY_ID}`}
     ></altcha-widget>
   );
 });
