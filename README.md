@@ -64,4 +64,12 @@ npm run build
 
 ---
 
-_[alexgeer.dev](https://alexgeer.dev)_
+## License
+
+[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+You are free to share and adapt this project for non-commercial purposes with attribution. Commercial use is not permitted.
+
+---
+
+_Built by [Alex Geer](https://alexgeer.dev)_
