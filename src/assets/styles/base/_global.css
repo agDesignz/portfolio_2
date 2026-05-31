@@ -15,3 +15,9 @@
 html {
   box-sizing: border-box;
 }
+
+@layer base {
+  body {
+    @apply bg-gradient-to-t from-blue_(ncs)-100 to-blue_(ncs)-300;
+  }
+}

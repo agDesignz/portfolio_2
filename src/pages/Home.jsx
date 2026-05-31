@@ -7,7 +7,7 @@ import Source from "../components/Source";
 
 const Home = () => {
   return (
-    <div className="text-saffron-900">
+    <div>
       <div className="fixed top-0 -z-10 h-full w-full">
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-gradient-img"></div>
       </div>
