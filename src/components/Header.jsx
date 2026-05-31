@@ -10,7 +10,7 @@ const Header = () => {
           <img
             className="h-full"
             src="./icons/favicon-48x48.png"
-            alt="Image of site logo: A saffron gold-colored letter 'a' within a saffron-gold ring."
+            alt="Site logo."
           />
         </figure>
         <Link
@@ -18,6 +18,7 @@ const Header = () => {
           target="_blank"
           className="text-3xl hover:opacity-50"
         >
+          <span className="hidden">Alex Geer Linkedin page</span>
           <FaLinkedin />
         </Link>
       </div>
