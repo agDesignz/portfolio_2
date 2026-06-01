@@ -14,7 +14,7 @@ const Projects = () => {
               key={idx}
               className="grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-8"
             >
-              <figure className="max-w-80 rounded-md overflow-hidden shadow-sm shadow-cocoa-300 relative">
+              <figure className="max-w-80 aspect-[3/2] rounded-md overflow-hidden shadow-sm shadow-cocoa-300 relative">
                 <img
                   src={`/images/${pro.image}`}
                   alt={`Image of ${pro.title}`}
@@ -29,7 +29,7 @@ const Projects = () => {
                   {pro.stack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="rounded-sm bg-cocoa-300 px-2 py-1 font-open-sans text-sm text-sky_blue-900"
+                      className="rounded-sm bg-mindaro-200 px-2 py-1 font-open-sans text-sm text-navy_blue-400"
                     >
                       {tech}
                     </span>
