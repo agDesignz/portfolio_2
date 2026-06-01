@@ -47,7 +47,7 @@ const About = () => {
               development.
             </p>
           </div>
-          <figure className="row-start-2 rounded-full overflow-hidden h-48 w-48 min-[320px]:h-80 min-[320px]:w-80 justify-self-center">
+          <figure className="row-start-2 rounded-full overflow-hidden w-100% aspect-square min-[400px]:w-80 justify-self-center">
             {imgLoaded ? (
               <img
                 className="h-full w-full object-cover"
