@@ -8,11 +8,11 @@ const Projects = () => {
         <div>
           <h2 className="page-section__title">Projects</h2>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-10">
           {PROJECTS.map((pro, idx) => (
             <div
               key={idx}
-              className="grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-8"
+              className="grid sm:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_3fr] gap-8 md:gap-10 lg:gap-12"
             >
               <figure className="max-w-80 aspect-[3/2] rounded-md overflow-hidden shadow-sm shadow-cocoa-300 relative">
                 <img
@@ -23,13 +23,15 @@ const Projects = () => {
                 {/* <div className="absolute top-0 left-0 right-0 bottom-0 z-20 project-gradient opacity-0 hover:opacity-100 duration-200"></div> */}
               </figure>
               <div className="flex flex-col gap-4">
-                <h3 className="font-oswald text-xl">{pro.title}</h3>
+                <h3 className="font-oswald font-light text-xl md:text-2xl tracking-wider text-saffron-500">
+                  {pro.title}
+                </h3>
                 <p>{pro.description}</p>
                 <div className="flex flex-wrap gap-4">
                   {pro.stack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="rounded-sm bg-mindaro-200 px-2 py-1 font-open-sans text-sm text-navy_blue-400"
+                      className="rounded-sm bg-gradient-to-tr from-saffron-400 to-saffron-600 px-2 py-1 font-open-sans text-sm text-navy_blue-400"
                     >
                       {tech}
                     </span>

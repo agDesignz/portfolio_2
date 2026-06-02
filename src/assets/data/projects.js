@@ -17,13 +17,13 @@ const PROJECTS = [
     alt: "Screenshot of the bookclub Manager main dashboard.",
   },
   {
-    title: "Jane Prince",
+    title: "Jane Prince Website",
     description:
       "Custom WordPress theme built for Jane Prince, former Saint Paul City Councilmember for Ward 7. The site serves as a civic engagement and community discussion platform, allowing the client to publish ongoing commentary, letters, and diary-style posts about local issues in Saint Paul.",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/jane_prince_wp",
     live: "https://janeprincew7.com/",
-    image: "project-jane.png",
+    image: "project-jprince.png",
     alt: "screenshot of Jane Prince campaign website.",
   },
   {

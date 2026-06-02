@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="grid sm:grid-cols-2 items-start gap-8 md:gap-16 font-[sans-serif]">
           <ContactForm />
           <div className="flex flex-col gap-4 justify-center h-full lg:p-16">
-            <p className="text-lg">
+            {/* <p className="text-lg">
               Whether you want to collaborate on a project or hire my services,
               you can send me a message through the contact form, email me
               directly, or connect on LinkedIn.
@@ -22,7 +22,7 @@ const Contact = () => {
 
             <div className="flex flex-col min-[320px]:flex-row gap-8 md:gap-16">
               <div className="flex items-center">
-                <div className="bg-gradient-to-tr from-carrot-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                <div className="bg-gradient-to-tr from-saffron-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <MdEmail className="text-2xl fill-polynesian_blue-400" />
                 </div>
                 <a
@@ -39,12 +39,12 @@ const Contact = () => {
                   target="_blank"
                   className="hover:opacity-70"
                 >
-                  <div className="bg-gradient-to-tr from-carrot-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <div className="bg-gradient-to-tr from-saffron-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                     <FaLinkedinIn className="text-2xl fill-polynesian_blue-400" />
                   </div>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

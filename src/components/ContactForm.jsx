@@ -112,7 +112,7 @@ const ContactForm = () => {
       <AltchaComponent ref={altchaRef} />
       <button
         type="submit"
-        className="bg-gradient-to-tr from-carrot-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"
+        className="bg-gradient-to-tr from-saffron-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"
       >
         Send
       </button>
