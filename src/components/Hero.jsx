@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="page-section page-section--border page-section--full-h">
+    <section className="page-section page-section--border">
       <div className="flex flex-col gap-4 w-full">
         <h1 className="text-5xl sm:text-7xl lg:text-8xl font-fredericka">
           Alex Geer
