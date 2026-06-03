@@ -6,7 +6,7 @@ const Footer = () => {
   const d = new Date();
 
   return (
-    <footer className="w-full min-h-20 p-4 bg-gradient-to-b from-polynesian_blue-300/15 to-navy_blue-300/15 flex justify-center items-center gap-8 flex-wrap text-saffron-500 italic">
+    <footer className="w-full min-h-20 p-4 bg-gradient-to-b from-green-800/70 to-green-950/80 flex justify-center items-center gap-8 flex-wrap text-saffron italic">
       <p className="text-sm sm:text-md md:text-lg">
         Copyright © <strong>Alex Geer</strong> {d.getFullYear()}
       </p>

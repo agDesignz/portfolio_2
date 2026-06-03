@@ -41,6 +41,7 @@ const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
   return (
     <altcha-widget
       style={{ width: "100%", color: "#ffffff" }}
+      type="switch"
       ref={widgetRef}
       challengeurl={`${challengeapi}?site=${process.env.ALTCHA_KEY_ID}`}
     ></altcha-widget>

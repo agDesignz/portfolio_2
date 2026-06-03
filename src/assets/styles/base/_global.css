@@ -1,7 +1,5 @@
 :root {
-  --green: theme(colors.mindaro.200);
-  --altcha-color-border: theme(colors.mindaro.900);
-  --altcha-max-width: 100%;
+  --altcha-color: theme(colors.orange.400);
 }
 
 *,
@@ -16,6 +14,6 @@ html {
 
 @layer base {
   body {
-    @apply bg-gradient-to-t from-blue_(ncs)-100 to-blue_(ncs)-300;
+    @apply bg-gradient-to-t from-ocean-900 to-ocean-700;
   }
 }

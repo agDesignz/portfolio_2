@@ -5,7 +5,7 @@
       border: none;
     }
     &__title {
-      @apply text-4xl md:text-5xl text-saffron-500 border-b-2 inline border-cocoa-300;
+      @apply text-4xl md:text-5xl text-saffron inline;
     }
     &--full-h {
       @apply min-h-screen;

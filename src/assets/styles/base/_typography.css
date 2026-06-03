@@ -1,7 +1,7 @@
 @layer base {
   html,
   body {
-    @apply font-open-sans text-saffron-900;
+    @apply font-open-sans text-saffron-100;
   }
 
   p {

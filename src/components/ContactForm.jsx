@@ -75,7 +75,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-4 text-navy_blue-600 text-lg items-center"
+      className="flex flex-col gap-4 text-navy-600 text-lg items-center"
       onSubmit={handleSubmit}
       ref={form}
     >
@@ -87,7 +87,7 @@ const ContactForm = () => {
         name="name"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md py-3 px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 outline-polynesian_blue-500"
+        className="w-full rounded-md py-3 px-4 bg-green-50 placeholder:text-navy-700 outline-navy-500"
       />
       <input
         autoComplete="off"
@@ -97,7 +97,7 @@ const ContactForm = () => {
         name="email"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md py-3 px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 outline-polynesian_blue-500"
+        className="w-full rounded-md py-3 px-4 bg-green-50 placeholder:text-navy-700 outline-navy-500"
       />
       <textarea
         autoComplete="off"
@@ -107,12 +107,12 @@ const ContactForm = () => {
         name="message"
         onChange={handleInputChange}
         onBlur={handleValidation}
-        className="w-full rounded-md px-4 bg-mindaro-900 placeholder:text-polynesian_blue-700 pt-3 outline-polynesian_blue-500"
+        className="w-full rounded-md px-4 bg-green-50 placeholder:text-navy-700 pt-3 outline-navy-500"
       ></textarea>
       <AltchaComponent ref={altchaRef} />
       <button
         type="submit"
-        className="bg-gradient-to-tr from-saffron-600 to-saffron-500 text-2xl text-navy_blue-600 hover:opacity-75 duration-75 tracking-wide rounded-md px-4 py-3 w-full"
+        className="bg-gradient-to-tr from-green-800 to-green text-2xl text-saffron-50 hover:from-green hover:to-green transition duration-300 tracking-wide rounded-md px-4 py-3 w-full"
       >
         Send
       </button>

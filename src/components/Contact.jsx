@@ -22,8 +22,8 @@ const Contact = () => {
 
             <div className="flex flex-col min-[320px]:flex-row gap-8 md:gap-16">
               <div className="flex items-center">
-                <div className="bg-gradient-to-tr from-saffron-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <MdEmail className="text-2xl fill-polynesian_blue-400" />
+                <div className="bg-gradient-to-tr from-saffron-300 to-saffron h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <MdEmail className="text-2xl fill-navy-400" />
                 </div>
                 <a
                   href="mailto:alexgeorgegeer@gmail.com"
@@ -39,8 +39,8 @@ const Contact = () => {
                   target="_blank"
                   className="hover:opacity-70"
                 >
-                  <div className="bg-gradient-to-tr from-saffron-600 to-saffron-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <FaLinkedinIn className="text-2xl fill-polynesian_blue-400" />
+                  <div className="bg-gradient-to-tr from-saffron-300 to-saffron h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <FaLinkedinIn className="text-2xl fill-navy-400" />
                   </div>
                 </Link>
               </div>
