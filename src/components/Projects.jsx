@@ -41,7 +41,7 @@ const Projects = () => {
                   <Link
                     to={pro.code}
                     target="_blank"
-                    className="link-btn link-btn__green link-btn__green--live"
+                    className="link-btn link-btn--green link-btn--green--live"
                   >
                     Code
                   </Link>
@@ -49,12 +49,12 @@ const Projects = () => {
                     <Link
                       to={pro.live && pro.live}
                       target="_blank"
-                      className="link-btn link-btn__green link-btn__green--live"
+                      className="link-btn link-btn--green link-btn--green--live"
                     >
                       Live
                     </Link>
                   ) : (
-                    <div className="link-btn link-btn__green link-btn--dead">
+                    <div className="link-btn link-btn--green link-btn--dead">
                       No live version available
                     </div>
                   )}

@@ -1,12 +1,16 @@
 @layer components {
   .link-btn {
-    @apply py-1 px-4 border rounded-md;
-    &__green {
+    @apply py-1 px-4 border rounded-md  transition duration-300;
+    &--green {
       @apply border-green bg-green-800 text-orange-100;
 
       &--live {
-        @apply hover:bg-saffron-300 hover:text-green-800 transition duration-300;
+        @apply hover:bg-saffron-300 hover:text-green-800;
       }
+    }
+
+    &--gold {
+      @apply border-saffron hover:bg-saffron hover:text-navy-800;
     }
 
     &--dead {
