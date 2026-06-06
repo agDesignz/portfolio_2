@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Source = () => {
   return (
-    <section className="page-section page-section--border">
+    <section className="page-section page-section--h-auto">
       <div className="flex items-center justify-center">
         <Link
           to="https://github.com/agDesignz/portfolio_2"

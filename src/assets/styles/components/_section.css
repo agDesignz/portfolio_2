@@ -10,5 +10,9 @@
     &--narrow {
       @apply max-w-[600px] xl:max-w-[600px];
     }
+
+    &--h-auto {
+      @apply min-h-fit;
+    }
   }
 }
