@@ -36,21 +36,19 @@ const Header = () => {
 
   return (
     <header className="absolute top-0 w-full" ref={ref}>
-      <div
-        className={`nav-wrapper ${
-          isIntersecting ? "" : " nav-wrapper--visible"
-        }`}
-      >
+      <nav className={`nav ${isIntersecting ? "" : " nav--fixed"}`}>
         <section className="flex items-center gap-4 container xl:max-w-[1200px] h-full text-saffron">
-          <figure className="max-width-44 w-20">
+          <figure
+            className={`nav__logo ${isIntersecting ? "" : " nav__logo--fixed"}`}
+          >
             <img
-              className="h-full"
+              className="w-full"
               src="/images/logo-lg.png"
               alt="Site logo."
             />
           </figure>
         </section>
-      </div>
+      </nav>
     </header>
   );
 };

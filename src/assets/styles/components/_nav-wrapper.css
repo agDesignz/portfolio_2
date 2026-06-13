@@ -1,10 +1,18 @@
 @layer componente {
-  .nav-wrapper {
-    @apply p-4;
+  .nav {
+    @apply px-4 py-2 md:p-4;
 
-    &--visible {
-      @apply fixed z-[150] w-full bg-ocean-950/75;
+    &--fixed {
+      @apply fixed z-[150] w-full p-2 bg-ocean-800/20;
       backdrop-filter: blur(4px);
+    }
+
+    &__logo {
+      @apply max-w-44 w-12 md:w-20;
+
+      &--fixed {
+        @apply md:w-12 lg:w-16;
+      }
     }
   }
 }
