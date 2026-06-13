@@ -1,26 +1,55 @@
+import { useState, useRef, useEffect } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LogoLg from "./svg/LogoLg.jsx";
 
 const Header = () => {
+  // https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersection-observer-api/
+
+  // https://dev.to/producthackers/intersection-observer-using-react-49ko
+
+  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+  // https://reactpractice.dev/articles/using-the-intersection-observer-api-with-react/
+
+  // https://github.com/agDesignz/jane_prince_html/blob/main/app/assets/scripts/modules/StickyHeader.js
+
+  const [isIntersecting, setIsIntersecting] = useState(true);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "300px",
+      threshold: 0,
+    };
+    const toggleNav = (entries) => {
+      const [entry] = entries;
+      setIsIntersecting(entry.isIntersecting);
+      console.log(isIntersecting);
+    };
+    const observer = new IntersectionObserver(toggleNav, options);
+    if (ref.current) observer.observe(ref.current);
+    // observer.observe(ref.current);
+    // return () => observer.disconnect();
+  }, [isIntersecting]);
+
   return (
-    <header className="p-4 absolute top-0 w-full">
-      <div className="flex items-center gap-4 container xl:max-w-[1200px] h-full text-saffron">
-        {/* <h1 className="text-3xl">AG</h1> */}
-        <figure className="max-width-44 w-20">
-          <img className="h-full" src="/images/logo-lg.png" alt="Site logo." />
-        </figure>
-        {/* <Link
-          to="https://www.linkedin.com/in/alexander-geer/"
-          target="_blank"
-          className="text-3xl hover:opacity-50"
-        >
-          <span className="hidden">Alex Geer Linkedin page</span>
-          <FaLinkedin />
-        </Link> */}
-        {/* <Link to="#" target="_blank" className="w-10">
-          <LogoLg fill="saffron-500" />
-        </Link> */}
+    <header className="absolute top-0 w-full" ref={ref}>
+      <div
+        className={`nav-wrapper ${
+          isIntersecting ? "" : " nav-wrapper--visible"
+        }`}
+      >
+        <section className="flex items-center gap-4 container xl:max-w-[1200px] h-full text-saffron">
+          <figure className="max-width-44 w-20">
+            <img
+              className="h-full"
+              src="/images/logo-lg.png"
+              alt="Site logo."
+            />
+          </figure>
+        </section>
       </div>
     </header>
   );

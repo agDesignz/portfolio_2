@@ -1,0 +1,10 @@
+@layer componente {
+  .nav-wrapper {
+    @apply p-4;
+
+    &--visible {
+      @apply fixed z-[150] w-full bg-ocean-950/75;
+      backdrop-filter: blur(4px);
+    }
+  }
+}

@@ -7,10 +7,10 @@ import Source from "../components/Source";
 
 const Home = () => {
   return (
-    <div>
-      <div className="fixed top-0 -z-10 h-full w-full">
+    <main>
+      <section className="fixed top-0 -z-10 h-full w-full">
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-gradient-img"></div>
-      </div>
+      </section>
       <div className="px-4">
         <Hero />
         <About />
@@ -19,7 +19,7 @@ const Home = () => {
         <Contact />
         <Source />
       </div>
-    </div>
+    </main>
   );
 };
 export default Home;
