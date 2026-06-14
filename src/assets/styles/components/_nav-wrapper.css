@@ -8,7 +8,7 @@
     }
 
     &__logo {
-      @apply max-w-44 w-12 md:w-20;
+      @apply max-w-44 w-10 sm:w-12 md:w-16 xl:w-20;
 
       &--fixed {
         @apply md:w-12 lg:w-16;

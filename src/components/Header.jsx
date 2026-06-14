@@ -4,16 +4,6 @@ import { Link } from "react-router-dom";
 import LogoLg from "./svg/LogoLg.jsx";
 
 const Header = () => {
-  // https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersection-observer-api/
-
-  // https://dev.to/producthackers/intersection-observer-using-react-49ko
-
-  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-
-  // https://reactpractice.dev/articles/using-the-intersection-observer-api-with-react/
-
-  // https://github.com/agDesignz/jane_prince_html/blob/main/app/assets/scripts/modules/StickyHeader.js
-
   const [isIntersecting, setIsIntersecting] = useState(true);
   const ref = useRef(null);
 
@@ -28,10 +18,11 @@ const Header = () => {
       setIsIntersecting(entry.isIntersecting);
       console.log(isIntersecting);
     };
+    // https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersection-observer-api/
+    // https://dev.to/producthackers/intersection-observer-using-react-49ko
     const observer = new IntersectionObserver(toggleNav, options);
     if (ref.current) observer.observe(ref.current);
-    // observer.observe(ref.current);
-    // return () => observer.disconnect();
+    return () => observer.disconnect();
   }, [isIntersecting]);
 
   return (
