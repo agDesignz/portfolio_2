@@ -1,0 +1,22 @@
+@layer components {
+  .project-card {
+    /* @apply grid; */
+
+    /* &__figure {
+      @apply md:h-72 overflow-hidden;
+    }
+    &__image {
+      @apply object-cover min-h-full w-auto;
+    } */
+
+    @apply grid grid-rows-projectCard w-full overflow-hidden aspect-projectCard;
+
+    &__figure {
+      @apply overflow-hidden;
+    }
+
+    &__image {
+      @apply object-cover min-h-full w-auto;
+    }
+  }
+}

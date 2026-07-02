@@ -1,9 +1,6 @@
 @layer components {
   .page-section {
     @apply container xl:max-w-[1200px] flex items-center justify-center py-4 md:py-12  min-h-screen;
-    &--border {
-      border: none;
-    }
     &__title {
       @apply text-4xl md:text-5xl text-saffron inline;
     }
