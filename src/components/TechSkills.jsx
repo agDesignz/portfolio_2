@@ -2,7 +2,7 @@ import TECH_SKILLS from "../assets/data/tech-skills";
 
 const TechSkills = () => {
   return (
-    <section className="page-section page-section--border">
+    <section className="page-section ">
       <div className="flex flex-col gap-8 w-full">
         <div>
           <h2 className="page-section__title">Skills</h2>

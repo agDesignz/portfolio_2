@@ -23,6 +23,12 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      aspectRatio: {
+        projectCard: "5 / 4",
+      },
+      gridTemplateRows: {
+        projectCard: "4fr 1fr",
+      },
       fontFamily: {
         "open-sans": ["Open_Sans", "sans-serif"],
         oswald: ["Oswald", "sans-serif"],
