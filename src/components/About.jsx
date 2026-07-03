@@ -12,7 +12,7 @@ const About = () => {
     image.src = portrait;
   }, [portrait]);
   return (
-    <section className="page-section ">
+    <section className="page-section page-section--border">
       <div className="flex flex-col gap-8">
         <div>
           <h2 className="page-section__title">About</h2>
