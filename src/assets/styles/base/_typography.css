@@ -1,14 +1,14 @@
 @layer base {
   html,
   body {
-    @apply font-open-sans text-saffron-100;
+    @apply font-sans text-saffron-100;
   }
 
   p {
-    @apply font-open-sans font-extralight;
+    @apply font-mono font-light;
   }
 
   h2 {
-    @apply font-fredericka;
+    @apply font-display;
   }
 }

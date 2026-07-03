@@ -24,7 +24,11 @@
     }
 
     &__title {
-      @apply font-bold text-lg leading-none;
+      @apply font-bold text-lg text-saffron-300 tracking-wide leading-none;
+    }
+
+    &__stack {
+      @apply font-mono text-sm tracking-tight;
     }
   }
 }

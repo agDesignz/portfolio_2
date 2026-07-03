@@ -14,7 +14,7 @@ const TechSkills = () => {
               className="shadow-md shadow-navy-900 rounded-md border border-navy-400 p-4 hover:scale-[1.02] hover:bg-navy-700/20 duration-500 flex flex-col items-center gap-4"
             >
               <skill.icon className={`text-4xl sm:text-7xl ${skill.fill}`} />
-              <h3 className="uppercase text-xl font-open-sans">{skill.name}</h3>
+              <h3 className="uppercase text-xl font-sans">{skill.name}</h3>
             </div>
           ))}
         </div>

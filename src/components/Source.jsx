@@ -12,14 +12,14 @@ const Source = () => {
   return (
     <section className="page-section flex flex-col items-center justify-center gap-4 md:gap-6 mb-6">
       <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
-        <h3 className="font-oswald font-light text-xl md:text-2xl tracking-wider text-saffron">
+        <h3 className="font-sans font-normal text-xl md:text-2xl tracking-wider text-saffron">
           This Site Was Built With:
         </h3>
         <ul className="flex justify-center flex-wrap gap-4">
           {portfolioStack.map((tech, idx) => (
             <li
               key={idx}
-              className="rounded-sm bg-gradient-to-tr from-navy-700 to-navy-600 px-2 py-1 font-open-sans font-medium text-sm text-saffron-200"
+              className="rounded-sm bg-gradient-to-tr from-navy-700 to-navy-600 px-2 py-1 font-mono tracking-tight font-medium text-sm text-saffron-200"
             >
               {tech}
             </li>
@@ -28,14 +28,14 @@ const Source = () => {
 
         <Link
           to="https://github.com/agDesignz/portfolio_2"
-          className="link-btn link-btn--gold text-xl text-saffron font-fredericka"
+          className="link-btn link-btn--gold text-xl text-saffron font-display"
           target="_blank"
         >
           See the source code for this site
         </Link>
       </article>
       <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
-        <p>
+        <p className="font-normal">
           Bot protection for this site is provided by my self-hosted backend
           service built with NodeJS, Express and Altcha, a free, open-source
           Captcha alternative.{" "}
@@ -49,10 +49,10 @@ const Source = () => {
         </Link>
       </article>
       <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
-        <h3 className="font-oswald font-light text-xl md:text-2xl tracking-wider text-saffron">
+        <h3 className="font-sans font-normal text-xl md:text-2xl tracking-wider text-saffron">
           About the background photo
         </h3>
-        <p>
+        <p className="font-normal">
           The background photo to this site shows the developer (me) near the
           summit of Mount Monadnock in southern New Hampshire, approaching via
           the Dublin trail. The foreground is mostly exposed granite (it's not

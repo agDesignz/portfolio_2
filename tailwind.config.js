@@ -30,9 +30,9 @@ export default {
         projectCard: "3fr 1fr",
       },
       fontFamily: {
-        "open-sans": ["Open_Sans", "sans-serif"],
-        oswald: ["Oswald", "sans-serif"],
-        fredericka: ["Fredericka_The_Great", "serif"],
+        display: ["fredericka_the_great", "sans-serif"],
+        sans: ["lato", "sans-serif"],
+        mono: ["source_code_pro", "monospace"],
       },
       colors: {
         saffron: {
