@@ -9,10 +9,6 @@ const Hero = () => {
           Full-Stack Developer | WordPress Developer | Creative Problem-Solver |
           Lifelong Learner
         </h2>
-        {/* <p className="text-2xl">I dream. I create. I bring stories to life.</p> */}
-        {/* <h2 className="text-2xl font-oswald">
-          Full-Stack Developer | Creative Problem-Solver | Lifelong Learner
-        </h2> */}
       </div>
     </section>
   );

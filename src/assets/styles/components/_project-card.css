@@ -9,14 +9,22 @@
       @apply object-cover min-h-full w-auto;
     } */
 
-    @apply grid grid-rows-projectCard w-full overflow-hidden aspect-projectCard;
+    @apply bg-navy-950/85 flex flex-col justify-between w-full overflow-hidden rounded-md relative;
 
     &__figure {
       @apply overflow-hidden;
     }
 
     &__image {
-      @apply object-cover min-h-full w-auto;
+      @apply object-cover w-full;
+    }
+
+    &__content {
+      @apply w-full p-4 flex flex-col gap-2;
+    }
+
+    &__title {
+      @apply font-bold text-lg leading-none;
     }
   }
 }

@@ -24,10 +24,10 @@ export default {
     },
     extend: {
       aspectRatio: {
-        projectCard: "5 / 4",
+        projectCard: "1/1",
       },
       gridTemplateRows: {
-        projectCard: "4fr 1fr",
+        projectCard: "3fr 1fr",
       },
       fontFamily: {
         "open-sans": ["Open_Sans", "sans-serif"],

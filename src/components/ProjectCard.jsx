@@ -10,9 +10,36 @@ const ProjectCard = ({ project }) => {
           alt={`Screenshot of ${project.title}`}
         />
       </figure>
-      {/* <div className="project-card__content">
+      <div className="project-card__content">
         <h3 className="project-card__title">{project.title}</h3>
-      </div> */}
+        <h4 className="project-card__stack">
+          {project.stack.map((tech, idx) => (
+            <span key={idx} className="project-card__tech-item">
+              {`${tech}${idx != project.stack.length - 1 ? " | " : ""}`}
+            </span>
+          ))}
+        </h4>
+        {/* <p>{project.description}</p> */}
+        {/* <div className="project-card__links">
+          <Link to={project.code} target="_blank" className="link-btn">
+            Code
+          </Link>
+          {project.live ? (
+            <Link
+              to={project.live && project.live}
+              target="_blank"
+              className="link-btn"
+            >
+              Live
+            </Link>
+          ) : (
+            <div className="link-btn link-btn--dead">
+              No live version available
+            </div>
+          )}
+        </div> */}
+        <button className="link-btn">Check it out!</button>
+      </div>
     </article>
   );
 };

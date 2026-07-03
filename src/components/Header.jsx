@@ -16,7 +16,6 @@ const Header = () => {
     const toggleNav = (entries) => {
       const [entry] = entries;
       setIsIntersecting(entry.isIntersecting);
-      console.log(isIntersecting);
     };
     // https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersection-observer-api/
     // https://dev.to/producthackers/intersection-observer-using-react-49ko
