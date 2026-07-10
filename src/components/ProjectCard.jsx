@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
             </div>
           )}
         </div> */}
-        <button className="link-btn">Check it out!</button>
+        <button className="link-btn mt-2 self-end">See project</button>
       </div>
     </article>
   );
