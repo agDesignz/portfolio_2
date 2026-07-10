@@ -83,28 +83,33 @@ const ContactForm = () => {
         autoComplete="off"
         type="text"
         placeholder="Name"
+        aria-label="Name"
         value={formState.name}
         name="name"
         onChange={handleInputChange}
         onBlur={handleValidation}
         className="w-full rounded-md py-3 px-4 bg-green-50 placeholder:text-navy-700 outline-navy-500"
       />
+
       <input
         autoComplete="off"
         type="email"
         placeholder="Email"
         value={formState.email}
         name="email"
+        aria-label="Email"
         onChange={handleInputChange}
         onBlur={handleValidation}
         className="w-full rounded-md py-3 px-4 bg-green-50 placeholder:text-navy-700 outline-navy-500"
       />
+
       <textarea
         autoComplete="off"
         placeholder="Message"
         rows="6"
         value={formState.message}
         name="message"
+        aria-label="Message"
         onChange={handleInputChange}
         onBlur={handleValidation}
         className="w-full rounded-md px-4 bg-green-50 placeholder:text-navy-700 pt-3 outline-navy-500"
