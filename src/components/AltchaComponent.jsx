@@ -10,8 +10,8 @@ import {
 const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
   const widgetRef = useRef(null);
   const [value, setValue] = useState(null);
-  const challengeapi = process.env.ALTCHA_API_CHALLENGE;
-  const altchaKey = process.env.ALTCHA_KEY_ID;
+  const challengeapi = import.meta.env.VITE_ALTCHA_API_CHALLENGE;
+  const altchaKey = import.meta.env.VITE_ALTCHA_KEY_ID;
 
   useImperativeHandle(
     ref,
