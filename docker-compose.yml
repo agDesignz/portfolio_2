@@ -1,0 +1,12 @@
+services:
+  web-dev:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app # bind mount: your host source → container
+      - /app/node_modules # anonymous volume: protects container's own node_modules
+    env_file:
+      - .env
