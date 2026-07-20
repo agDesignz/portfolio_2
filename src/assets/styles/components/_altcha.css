@@ -1,0 +1,7 @@
+@layer components {
+  altcha-widget {
+    & > .altcha {
+      @apply max-w-full;
+    }
+  }
+}
