@@ -1,5 +1,4 @@
 import emailjs from "@emailjs/browser";
-import "dotenv";
 
 const sendEmail = async (formData) => {
   try {
