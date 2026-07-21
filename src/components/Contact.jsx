@@ -21,15 +21,23 @@ const Contact = () => {
           <ContactForm showRobot={showRobot} />
           <div
             ref={robotRef}
-            className="h-full grid grid-rows-[auto_auto_1fr] gap-4 md:gap-8 justify-items-center scale-0 transition-transform duration-500"
+            className="h-full grid gap-4 justify-items-center transition-transform duration-500 scale-0"
           >
-            <h3 className="text-2xl md:text-4xl font-sans">Robots!</h3>
-            <p className="text-justify max-w-80">
+            <h3 className="text-2xl md:text-4xl font-mono text-saffron-200">
+              Robots!
+            </h3>
+            <p className="max-w-96 font-sans">
               The word "ROBOT" was coined by Czech playwrite Karel &#268;apek in
-              1920. I learned this during the twelve years I spent living in the
-              Czech capital, Prague ("Praha" to the locals).
+              1920. The theater has played an important role in Czech history;
+              playwrite V&#225;clav Havel emerged as the{" "}
+              <span className="italic">de facto</span> figurehead of the 1989
+              Velvet Revolution, and went on to serve as President of
+              Czechoslovakia, and later the Czech Republic. I lived in the Czech
+              capital, Prague, for nearly 12 years, so I had to include some fun
+              Czech facts!
             </p>
-            <RiRobot3Fill className="text-9xl self-end" />
+            <RiRobot3Fill className="text-9xl self-end fill-navy-300" />
+            <small className="font-mono">"Díky za přečtení!"</small>
           </div>
         </div>
       </div>
