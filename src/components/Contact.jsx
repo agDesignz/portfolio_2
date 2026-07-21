@@ -2,6 +2,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
+import { RiRobot3Fill } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -13,38 +14,14 @@ const Contact = () => {
 
         <div className="grid sm:grid-cols-2 items-start gap-8 md:gap-16 font-[sans-serif]">
           <ContactForm />
-          <div className="flex flex-col gap-4 justify-center h-full lg:p-16">
-            {/* <p className="text-lg">
-              Whether you want to collaborate on a project or hire my services,
-              you can send me a message through the contact form, email me
-              directly, or connect on LinkedIn.
+          <div className="h-full grid">
+            <h3>Robots!</h3>
+            <p>
+              The word "ROBOT" was coined by Czech playwrite Karel &#268;apek in
+              1920. I learned during the twelve years I spend living in the
+              Czech capital, Prague (Praha to the locals).
             </p>
-
-            <div className="flex flex-col min-[320px]:flex-row gap-8 md:gap-16">
-              <div className="flex items-center">
-                <div className="bg-gradient-to-tr from-saffron-300 to-saffron h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <MdEmail className="text-2xl fill-navy-400" />
-                </div>
-                <a
-                  href="mailto:alexgeorgegeer@gmail.com"
-                  className="text-sm ml-4 hover:opacity-70"
-                >
-                  <small className="block">Mail</small>
-                  <strong>alexgeorgegeer@gmail.com</strong>
-                </a>
-              </div>
-              <div className="flex items-center">
-                <Link
-                  to="https://www.linkedin.com/in/alexander-geer/"
-                  target="_blank"
-                  className="hover:opacity-70"
-                >
-                  <div className="bg-gradient-to-tr from-saffron-300 to-saffron h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <FaLinkedinIn className="text-2xl fill-navy-400" />
-                  </div>
-                </Link>
-              </div>
-            </div> */}
+            <RiRobot3Fill className="h-96" />
           </div>
         </div>
       </div>
