@@ -26,18 +26,28 @@ const Contact = () => {
             <h3 className="text-2xl md:text-4xl font-mono text-saffron-200">
               Robots!
             </h3>
-            <p className="max-w-96 font-sans">
+            <p className="font-normal">
               The word "ROBOT" was coined by Czech playwrite Karel &#268;apek in
-              1920. The theater has played an important role in Czech history;
-              playwrite V&#225;clav Havel emerged as the{" "}
-              <span className="italic">de facto</span> figurehead of the 1989
-              Velvet Revolution, and went on to serve as President of
-              Czechoslovakia, and later the Czech Republic. I lived in the Czech
-              capital, Prague, for nearly 12 years, so I had to include some fun
-              Czech facts!
+              1920. I lived in the Czech capital, Prague, for nearly 12 years,
+              so I had to include some fun Czech facts!{" "}
             </p>
-            <RiRobot3Fill className="text-9xl self-end fill-navy-300" />
-            <small className="font-mono">"Díky za přečtení!"</small>
+
+            <p className="font-normal">
+              Bot protection for this site is provided by my self-hosted backend
+              service built with NodeJS, Express and Altcha, a free, open-source
+              Captcha alternative.{" "}
+            </p>
+            <Link
+              to="https://github.com/agDesignz/altcha_backend"
+              target="_blank"
+              className="link-btn link-btn--outline self-start"
+            >
+              Altcha Backend
+            </Link>
+            <span>
+              <RiRobot3Fill className="text-3xl self-end fill-navy-300 inline-block mr-2" />
+              <small className="font-mono">"Díky za přečtení!"</small>
+            </span>
           </div>
         </div>
       </div>

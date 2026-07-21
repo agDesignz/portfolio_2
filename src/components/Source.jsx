@@ -10,7 +10,7 @@ const portfolioStack = [
 
 const Source = () => {
   return (
-    <section className="page-section flex flex-col items-center justify-center gap-4 md:gap-6 mb-6">
+    <section className="page-section flex flex-col items-center justify-around gap-4 md:gap-10 mb-6">
       <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
         <h3 className="font-sans font-normal text-xl md:text-2xl tracking-wider text-saffron">
           This Site Was Built With:
@@ -34,20 +34,7 @@ const Source = () => {
           See the source code for this site
         </Link>
       </article>
-      <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
-        <p className="font-normal">
-          Bot protection for this site is provided by my self-hosted backend
-          service built with NodeJS, Express and Altcha, a free, open-source
-          Captcha alternative.{" "}
-        </p>
-        <Link
-          to="https://github.com/agDesignz/altcha_backend"
-          target="_blank"
-          className="link-btn link-btn--green link-btn--green--live"
-        >
-          Altcha Backend
-        </Link>
-      </article>
+
       <article className="max-w-xl flex flex-col items-center justify-center gap-2 md:gap-4">
         <h3 className="font-sans font-normal text-xl md:text-2xl tracking-wider text-saffron">
           About the background photo
