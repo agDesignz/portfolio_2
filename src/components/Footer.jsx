@@ -15,6 +15,7 @@ const Footer = () => {
           to="https://github.com/agDesignz"
           target="_blank"
           className="text-2xl hover:opacity-50"
+          aria-label="Github"
         >
           <FaGithub />
         </Link>
@@ -22,6 +23,7 @@ const Footer = () => {
           to="https://www.linkedin.com/in/alexander-geer/"
           target="_blank"
           className="text-3xl hover:opacity-50"
+          aria-label="LinkedIn"
         >
           <FaLinkedin />
         </Link>

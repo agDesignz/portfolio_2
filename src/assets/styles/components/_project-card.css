@@ -30,5 +30,25 @@
     &__stack {
       @apply font-mono text-sm tracking-tight;
     }
+
+    &__cover {
+      @apply absolute top-0 left-0 right-0 bottom-0 bg-navy-950/95 z-[200] p-4 grid grid-rows-[auto_1fr_auto] gap-6 overflow-y-scroll translate-y-full transition-all duration-500;
+
+      &--up {
+        @apply translate-y-0;
+      }
+    }
+
+    &__links {
+      @apply flex justify-center gap-4;
+    }
+
+    &__close {
+      @apply p-2 bg-navy-700 hover:bg-navy-600 rounded-full justify-self-end transition-colors duration-300;
+    }
+
+    &__down-chev {
+      @apply fill-saffron-300;
+    }
   }
 }

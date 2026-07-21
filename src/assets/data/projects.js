@@ -65,7 +65,7 @@ const PROJECTS = [
   },
   {
     title: "DKG Landscaping",
-    description: "Fictitious business website, for practicing Scss and CSS",
+    description: "Fictitious business website, for practicing CSS and Scss",
     stack: ["Scss", "HTML", "Javascript"],
     code: "https://github.com/agDesignz/dkgLandscaping_Sass",
     live: "https://agdesignz.github.io/dkgLandscaping_Sass/",
