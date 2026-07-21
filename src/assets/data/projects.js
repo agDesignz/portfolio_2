@@ -32,7 +32,7 @@ const PROJECTS = [
       "Custom WordPress theme built for Pinnacle Solar, a solar energy consulting company serving homeowners and businesses throughout New England, based in the Berkshire Mountains of western Massachusetts.",
     stack: ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     code: "https://github.com/agDesignz/pinnacle-solar_wp",
-    live: "https://solar.alexgeer.dev/",
+    live: "https://solar.cooldudeweb.com/",
     image: "project-pinn.png",
     alt: "screenshot of Pinnacle Solar website.",
   },

@@ -5,7 +5,7 @@ import AltchaComponent from "./AltchaComponent"; // Import captcha component
 import sendEmail from "../utils/sendEmail";
 import altchaVerify from "../utils/altchaVerify";
 
-const ContactForm = () => {
+const ContactForm = ({ showRobot }) => {
   const form = useRef();
   // Data from the form:
   const [formState, setFormState] = useState({
@@ -114,7 +114,7 @@ const ContactForm = () => {
         onBlur={handleValidation}
         className="w-full rounded-md px-4 bg-green-50 placeholder:text-navy-700 pt-3 outline-navy-500"
       ></textarea>
-      <AltchaComponent ref={altchaRef} />
+      <AltchaComponent ref={altchaRef} showRobot={showRobot} />
       <button
         type="submit"
         className="bg-gradient-to-tr from-green-800 to-green text-2xl text-saffron-50 hover:from-green hover:to-green transition duration-300 tracking-wide rounded-md px-4 py-3 w-full"

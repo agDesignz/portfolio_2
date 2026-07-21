@@ -7,7 +7,7 @@ import {
   useImperativeHandle,
 } from "react";
 
-const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
+const AltchaComponent = forwardRef(({ onStateChange, showRobot }, ref) => {
   const widgetRef = useRef(null);
   const [value, setValue] = useState(null);
   const challengeapi = import.meta.env.VITE_ALTCHA_API_CHALLENGE;
@@ -28,6 +28,7 @@ const AltchaComponent = forwardRef(({ onStateChange }, ref) => {
       if ("detail" in ev) {
         setValue(ev.detail.payload || null);
         onStateChange?.(ev);
+        showRobot();
       }
     };
 
